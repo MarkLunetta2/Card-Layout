@@ -19,6 +19,7 @@ h2{
 }
 
 .card{
+    display: flex; /*Just a bit of Flex too cuz it looks funny!*/
     background-color: #f3f3f3;
     border-radius: 15px;
     /*If you want to center something and also have space on either side, you must set both margin: 0 auto and have a width.*/
@@ -29,6 +30,33 @@ h2{
     box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
     border: 1px solid #aaa;
 }
+
+/*Portfolio Layout Lab additions (Grid)*/
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
+
+.box1{
+    background-color: aqua;
+    grid-column: 2/4;
+    grid-row: 1;
+}
+
+.box2{
+    background-color: aquamarine;
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.box3{
+    background-color: chartreuse;
+    grid-column: 2;
+    grid-row: 3;
+}
+
 
 /* Only changes avatart when it's inside of .card (if you just put .avatar it would do it regardless of where it's located).*/
 .card .avatar{
